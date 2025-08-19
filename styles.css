@@ -1,0 +1,340 @@
+body{
+    font-family:'JetBrains Mono', monospace;
+    background-color:rgb(116, 140, 235);
+    color: rgb(64, 64, 144);
+    margin:0;
+    padding:0;
+}
+
+/*Style text and headings*/
+
+h1{
+    text-align: center; 
+    background-color: rgb(154, 184, 255);
+    margin: 0%;
+    padding-top:4%;
+    padding-bottom:4%;
+    font-size:60px;
+    width:100%;
+}
+
+h2{
+    text-align: center; 
+    background-color: rgb(154, 184, 255);
+    padding:3%;
+    font-size:40px;
+}
+
+
+#title{
+    text-align: center; 
+    background-color: rgb(154, 184, 255);
+    padding-top:5%;
+    padding-bottom:5%;
+    font-size:70px;
+    margin:0;
+}
+
+.tag {
+    margin-top:4%;
+    margin-bottom:2%;
+    width:60%;
+    text-align: center;
+    display: block;
+    background-color: rgb(110, 110, 194);
+    color:rgb(174, 194, 244);
+}
+
+
+.large-txt{
+    text-align:center;
+    font-size:25px;
+    padding:4% 5% 4% 5%;
+    line-height: 1.8;
+
+}
+
+.round-box{
+    border-radius:18px;
+}
+
+.top-round{
+    border-radius: 18px 18px 0 0;
+}
+
+.bottom-round{
+    border-radius:0 0 18px 18px;
+}
+
+
+
+.icon {
+    filter: brightness(0) saturate(100%) invert(36%) sepia(74%) saturate(482%) hue-rotate(200deg) brightness(102%) contrast(101%);
+}
+
+.icon:hover{
+    filter: invert(23%) sepia(81%) saturate(5703%) hue-rotate(227deg) brightness(84%) contrast(87%);
+}
+
+
+
+
+/*Home page specific*/
+
+/*TYPEWRITER ANIMATION*/
+#typewriter1{
+    border-right: 0.15em solid rgb(64, 64, 144);
+    animation: blink-cursor 0.75s step-end infinite;
+    white-space: pre-wrap;
+    overflow:hidden;
+}
+
+
+@keyframes blink-cursor{
+    from, to { border-color: transparent; }
+    50% { border-color: rgb(64, 64, 144); }
+}
+
+#typewriter2{
+    border-right: 0.15em solid rgb(174, 194, 244);
+    animation: blink-cursor2 0.75s step-end infinite;
+    white-space: pre-wrap;
+    overflow:hidden;
+}
+
+@keyframes blink-cursor2{
+    from, to { border-color: transparent; }
+    50% { border-color: rgb(174, 194, 244); }
+}
+
+
+
+/*-------------------------*/
+
+.caption{
+    text-align:center;
+    background-color:  rgb(110, 110, 194);
+    color:rgb(174, 194, 244);
+    padding:5%;
+}
+
+.home-text{
+    align-items: center;
+    width:85%;
+    background-color: rgb(174, 194, 244);
+    margin:6% auto;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+
+}
+
+
+#home-img{
+    margin:auto;
+    margin-top:3%;
+    margin-bottom:3%;
+    display:block;
+    width:50%;
+    height:50%;
+    border:10px solid rgb(174, 194, 244);
+    border-radius:13px;
+}
+
+
+/*navigation bar*/
+
+.nav-bar{
+    overflow:hidden;
+    background-color: rgb(174, 194, 244);
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align:center;
+    margin:0;
+    width:100%;
+}
+
+.nav-bar a{
+    flex: 1 1 auto;
+    color: rgb(64, 64, 144);
+    text-align: center;
+    padding:3% 4%;
+    text-decoration:none;
+    font-size:27px;
+}
+
+.nav-bar a:hover{
+    color:rgb(174, 194, 244);
+    background-color:rgb(110, 110, 194);
+}
+
+
+/*Photo Gallery*/
+.gallery {
+    box-sizing: border-box;
+    border-radius: 13px;
+    border: 10px solid rgb(174, 194, 244);
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; 
+    width: 80%; 
+    max-width: 900px;
+}
+
+/* Only show active slide */
+.mySlides {
+    border-radius: 13px;
+    border:15px solid rgb(110, 110, 194);
+    margin-bottom:3%;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+
+.prev {
+    left: 5%; /* outside left edge */
+    border-radius: 8px;
+}
+
+.next {
+    right: 5%; /* outside right edge */
+    border-radius: 8px;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(110, 110, 194, 0.8);
+    border-radius: 8px;
+}
+
+.mySlides img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+    object-fit: cover;
+}
+
+
+/*Education Page Specific*/
+.edu-entry{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    width:90%;
+    margin-bottom:15px;
+}
+
+.left{
+    flex:1;
+    text-align:left;
+}
+
+.right{
+    text-align:right;
+    white-space:nowrap;
+}
+
+.school-logo{
+    height:auto;
+    margin-right:14px;
+    width:200px;
+}
+
+.school-title{
+    font-size:33px;
+}
+
+.edu-entry.large-txt {
+    padding:1px;
+}
+
+.edu-entry:first-child{
+    margin-top:45px;
+}
+.edu-entry:last-child {
+    margin-bottom: 40px; 
+}
+
+/*Resume Specific*/
+.resume-txt{
+    text-align:center;
+    font-size:38px;
+    padding:10px 15px 10px 15px;
+    line-height: 1.5;
+}
+
+#download{
+    padding-bottom:50px;
+    height:auto;
+    width:250px;
+    
+}
+
+/*Phone friendly version of education stack*/
+@media (max-width: 600px) {
+  .edu-entry {
+    flex-direction: column;   
+    align-items: flex-start;  
+    text-align: left;
+  }
+
+  .right {
+    text-align: left;  
+    margin-top: 8px;   
+  }
+
+  .school-logo {
+    margin-bottom: 8px; 
+  }
+}
+
+/*Footer*/
+footer{
+    margin:0;
+    width:100%;
+    border:none;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    background-color: rgb(154, 184, 255);
+
+}
+
+.contact-links{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    align-items: center;
+}
+
+span{
+    text-align: center;
+    margin-top:45px;
+    margin-bottom:45px;
+}
+
+
+.edu{
+    display:flex;
+}
+
+html{
+    scroll-behavior: smooth;
+}
